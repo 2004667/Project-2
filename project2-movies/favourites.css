@@ -1,0 +1,77 @@
+/* Styling for the favorite movie cards */
+.movie_item {
+    width: 200px;
+    height: 300px;
+    background-color: #FFDD4E;
+    border-radius: 20px;
+    border: 4px white;
+    border-style: double;
+    text-align: center;
+    box-sizing: border-box;
+    flex: 0 0 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for a nicer effect */
+}
+
+.movie_img-rounded {
+    width: 90%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.movie-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+}
+
+.movie-rating {
+    font-size: 1em;
+    color: #666;
+}
+
+.movie-switch-img {
+    cursor: pointer;
+    margin-top: 10px;
+    width: 23px;
+    height: 20px;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 620px) {
+    #favorites-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid layout for responsive card display */
+        gap: 10px;
+    }
+
+    .movie_item {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .movie-title {
+        font-size: 1em;
+    }
+
+    .movie-rating {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    #favorites-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0095ff;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 2rem;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border-radius: 15px;
+    border: none;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    background-color: #ff7f3e;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff541c;
+}
+
+.unit-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.unit-toggle label {
+    margin-right: 10px;
+}
+
+.main {
+    padding: 30px;
+}
+
+.current-weather {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.weather-details p {
+    margin: 5px 0;
+}
+
+.forecast {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.forecast-card {
+    background: #e9e9e9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+}
+
+.forecast-card img {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    background-color: #0095ff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container {
+        margin-top: 10px;
+    }
+
+    .forecast-cards {
+        flex-direction: column;
+    }
+}

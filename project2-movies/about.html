@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieApp</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./about.css">
+</head>
+<body>
+    <header style="display: flex;  ">
+        <div style="display: flex; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 5px;" class="logo">
+                <img src="./images/video-camera (1).png" alt="" width="30px" height="30px">
+                <h1 class="main-title">Korinis!</h1>
+            </div>
+            <nav style="" class="nav-nav">
+                <a href="./home.html">Home</a>
+                <a href="./favourites.html">Favourites</a>
+                <a href="./about.html">About us</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+            <img src="./images/burger-bar.png" alt="" width="40px" height="40px">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search..">
+            <div class="input-search">
+                <img src="./images/search.png" alt="">
+            </div>
+        </div>
+        <div class="burger-menu">
+            <a href="./about.html">About us</a>
+            <a href="./favourites.html">Favourites</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </header>
+    <main>
+        <div class="ss">
+            <div class="main-img">
+                <img src="./images/jakob-owens-CiUR8zISX60-unsplash.jpg" alt="" >
+             </div>
+             <div class="main-text"> 
+                <h1>Korinis</h1>
+                <p>"Welcome to Korinis – your ultimate destination for movies that captivate, inspire, and entertain. With a vast library spanning genres, eras, and styles, we bring you cinema's best from around the globe. Stream anytime, anywhere, and explore stories that resonate, excite, and create unforgettable movie nights, every night."</p>
+             </div>
+        </div>
+    </main>
+</body>
+<script>
+function toggleMenu() {
+    const menu = document.querySelector('.burger-menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+
+  </script>
+</html>

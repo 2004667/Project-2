@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeApp</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./about.css">
+</head>
+<body>
+    <header style="display: flex;  ">
+        <div style="display: flex; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 5px;" class="logo">
+                <img src="./images/cookbook.png" alt="" width="30px" height="30px">
+                <h1 class="main-title">AuqatList!</h1>
+            </div>
+            <nav style="" class="nav-nav">
+                <a href="./home.html">Home</a>
+                <a href="./recipes.html">Recipes</a>
+                <a href="./about.html">About us</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+            <img src="./images/burger-bar.png" alt="" width="40px" height="40px">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search..">
+            <div class="input-search">
+                <img src="./images/search.png" alt="">
+            </div>
+        </div>
+    
+        <div class="burger-menu">
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About us</a>
+            <a href="./recipes.html">Recipes</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+      </header>
+    <main>
+        <div class="big-wh-scr">
+            <div class="image">
+                <img src="./images/brooke-lark-jUPOXXRNdcA-unsplash.jpg" alt="">
+            </div>
+            <div class="text">
+                <h1>Who are we?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam quidem repellat quis saepe non ratione facere minus ipsa ex impedit, dolores iste vitae hic qui odio tempora reprehenderit cupiditate delectus!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur tempora doloremque, nesciunt dolorum aperiam asperiores quae itaque labore perferendis eum provident, dolor accusantium sunt iure id ipsum nostrum! Sapiente, ad.</p>
+            </div> 
+        </div>
+    </main>
+</body>
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.burger-menu');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+    
+      </script>
+</html>

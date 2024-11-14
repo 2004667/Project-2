@@ -1,0 +1,168 @@
+body {
+    background-color: #FF7F3E;
+    width: auto;
+    height: auto;
+    font-family: "Poppins", sans-serif;
+    background-repeat: no-repeat;
+}
+
+.main-title {
+    color: #FFF6E9;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+input::placeholder {
+    font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .nav-nav {
+        display: none;
+    }
+
+    .logo {
+        width: 400px;
+    }
+
+    .input-search {
+        border-radius: 50%;
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px #000;
+        border-style: solid;
+        display: none;
+    }
+
+    .input-search img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    input {
+        height: 40px;
+        width: 240px;
+        border-radius: 20px;
+        padding-left: 15px;
+        border: 1px #000;
+        border-style: solid;
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        position: absolute; 
+        top: 20px;  
+        right: 20px; 
+    }
+
+    .burger-menu {
+        position: absolute;
+        top: 60px; 
+        right: 0;
+        background-color: #FF7F3E;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .burger-menu a {
+        color: #FFF6E9;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 30%;
+    }
+
+    .burger-menu a:hover {
+        color: #000;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .burger{
+        display: none;
+    }
+    .burger-menu{
+        display: none;
+    }
+    nav {
+        color: #FFF6E9;
+        width: 600px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    nav a {
+        color: #FFF6E9;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: #000;
+    }
+
+    .logo {
+        width: 400px;
+    }
+
+    .input-search {
+        border-radius: 50%;
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px #000;
+        border-style: solid;
+    }
+
+    .input-search img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    input {
+        height: 40px;
+        width: 240px;
+        border-radius: 20px;
+        padding-left: 15px;
+        border: 1px #000;
+        border-style: solid;
+    }
+}

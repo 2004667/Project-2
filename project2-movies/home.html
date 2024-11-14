@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieApp</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./home.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <header style="display: flex;  ">
+        <div style="display: flex; align-items: center;">
+            <div style="display: flex; align-items: center; gap: 5px;" class="logo">
+                <img src="./images/video-camera (1).png" alt="" width="30px" height="30px">
+                <h1 class="main-title">Korinis!</h1>
+            </div>
+            <nav style="" class="nav-nav">
+                <a href="./home.html">Home</a>
+                <a href="./favourites.html">Favourites</a>
+                <a href="./about.html">About us</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </div>
+        <div class="burger" onclick="toggleMenu()">
+            <img src="./images/burger-bar.png" alt="" width="40px" height="40px">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search..">
+            <div class="input-search">
+                <img src="./images/search.png" alt="">
+            </div>
+        </div>
+
+        <div class="burger-menu">
+            <a href="./about.html">About us</a>
+            <a href="./favourites.html">Favourites</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="slogan">
+            <h1>"Get ready to experience the best in cinema."</h1>
+            <div class="slog-author">
+                <h3>I. Nyssanbek</h3>
+            </div>
+        </div>
+        <div class="slider-container">
+            <button class="prev-btn" id="prev-btn">&#10094;</button>
+            <div class="cards">
+                <div class="cards-container" id="cards-container">
+                </div>
+            </div>
+            <button class="next-btn" id="next-btn">&#10095;</button>
+        </div>
+    </main>
+    <div id="movie-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="movie-title"></h2>
+            <p id="movie-description"></p>
+            <p><strong>Rating:</strong> <span id="movie-rating"></span> / 10</p>
+            <p><strong>Duration:</strong> <span id="movie-duration"></span> minutes</p>
+            <div id="movie-trailer">
+            </div>
+        </div>
+    </div>
+</body>
+  <script>
+function toggleMenu() {
+    const menu = document.querySelector('.burger-menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+
+  </script>
+</html>

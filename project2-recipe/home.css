@@ -1,0 +1,107 @@
+
+
+@media only screen and (max-width: 1200px) {
+    .main-slogan{
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+        color: #FFF;
+        text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    
+    }
+    .main-slogan p {
+        font-size: 20px;
+    }
+    .first-part{
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 2%;
+    }
+    .main-slogan-s{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .main-slogan-s-img {
+        display: flex;
+        align-items: center;
+    }
+    .main-slogan-s-img img{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%; 
+        object-fit: cover;
+        text-align: 5px 5px 5px black;
+        border: 5px #FFF;
+        border-style: solid;
+    }
+    .get-start div{
+        width: 160px;
+        height: 50px;
+        color: #FFF;
+        background-color: blueviolet;
+        border-radius: 14px 0 14px 0;
+        text-shadow: 1px 1px 1px #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        border: 2px #FFF;
+        border-style: solid;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .main-slogan{
+        width: 500px;
+        height: auto;
+        font-size: 30px;
+        color: #FFF;
+        text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    
+    }
+    .main-slogan p {
+        font-size: 20px;
+    }
+    .first-part{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 2%;
+    }
+    .main-slogan-s{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .main-slogan-s-img {
+        display: flex;
+        align-items: center;
+    }
+    .main-slogan-s-img img{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%; 
+        object-fit: cover;
+        text-align: 5px 5px 5px black;
+        border: 5px #FFF;
+        border-style: solid;
+    }
+    .get-start div{
+        width: 160px;
+        height: 50px;
+        color: #FFF;
+        background-color: blueviolet;
+        border-radius: 14px 0 14px 0;
+        text-shadow: 1px 1px 1px #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        border: 2px #FFF;
+        border-style: solid;
+    }
+}
